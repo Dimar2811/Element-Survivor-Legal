@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Element Survivor – Datenschutz / Privacy</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<nav><a href="index.html">Element Survivor</a><a href="terms.html">Nutzungsbedingungen</a><a href="support.html">Support</a><a href="impressum.html">Impressum</a></nav>
+<div class="lang"><a href="#de">Deutsch</a><a href="#en">English</a></div>
+
+<!--
+  Belege im Code (Stand 2026-11-20, Branch jagd):
+  - Kein Netzzugriff: einziges fetch() lädt Musik aus dem App-Paket (src/audio/music.ts:249); kein URLSession in ios/App/App/*.swift.
+  - Spielstand lokal: localStorage (src/meta/profile.ts:136) und Sicherungsdatei in Application Support (ios/App/App/GameViewController.swift:105).
+  - Kein iCloud: keine Entitlements, kein NSUbiquitousKeyValueStore oder CloudKit.
+  - Gerätesprache: Locale.preferredLanguages wird lokal an die Spielansicht gegeben (GameViewController.swift:21).
+  - Käufe: StoreKit 2 auf dem Gerät (ios/App/App/Store.swift); zufällige Bestellkennung als appAccountToken nur bei Jade-Käufen (Store.swift:164, src/meta/purchases.ts:109).
+  - Zurücksetzen: Einstellungen → „Fortschritt zurücksetzen“, Käufe bleiben (src/meta/profile.ts, resetProfile).
+  - Privacy-Manifest: NSPrivacyTracking false, keine erfassten Datentypen (ios/App/App/PrivacyInfo.xcprivacy).
+-->
+
+<section id="de">
+<h1>Datenschutzerklärung</h1>
+<p class="muted">Stand: 20. November 2026</p>
+
+<h2>Verantwortlicher</h2>
+<p>Marc Hammerschmidt<br>Karolingerstraße 9a<br>55283 Nierstein<br>Deutschland<br>E-Mail: <a href="mailto:support@3d-voxelia.com">support@3d-voxelia.com</a></p>
+
+<h2>Kurzfassung</h2>
+<p class="card">Element Survivor läuft ohne Konto, ohne Werbung, ohne Tracking und ohne Internetverbindung. Wir erhalten keine Daten von dir. Dein Spielstand bleibt auf deinem Gerät, und Käufe wickelt Apple ab.</p>
+
+<h2>Welche Daten die App verarbeitet</h2>
+<h3>Spielstand auf deinem Gerät</h3>
+<p>Fortschritt, Jade, Sterne, Ausrüstung und Einstellungen (Sprache, Ton, Haptik, Grafik, Figur) speichert die App auf deinem Gerät, im Speicher der Spielansicht und als Sicherungskopie in einer Datei im Ordner der App. Die App schickt diese Daten nirgendwohin; wir erhalten sie nicht. Sie bleiben, bis du sie in der App unter Einstellungen → „Fortschritt zurücksetzen“ löschst oder die App löschst. Nutzt du ein Geräte-Backup über iCloud oder einen Computer, ist der Spielstand darin enthalten wie die Daten anderer Apps; das steuerst du in den Einstellungen deines iPhones. Das Speichern auf dem Gerät ist für das Spiel unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG; Art. 6 Abs. 1 lit. b DSGVO).</p>
+<h3>Sprache deines Geräts</h3>
+<p>Damit das Spiel Deutsch oder Englisch spricht, liest die App die bevorzugten Sprachen deines Geräts. Diese Angabe bleibt auf dem Gerät.</p>
+<h3>Käufe</h3>
+<p>Alle Käufe in der App wickelt Apple über den App Store ab. Wir erhalten keine Zahlungsdaten und betreiben keinen eigenen Server. Die App fragt auf deinem Gerät bei Apple ab, welche Käufe zu deinem Apple Account gehören. Bei Jade-Käufen gibt die App Apple eine zufällige Bestellkennung mit, die auf deinem Gerät entsteht. Sie sorgt dafür, dass eine später bestätigte Zahlung, etwa nach einer Kaufanfrage in der Familie, der richtigen Bestellung gutgeschrieben wird, und sagt nichts über dich aus. Für die Verarbeitung durch Apple gilt <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzrichtlinie</a>.</p>
+<h3>Absturz- und Leistungsberichte</h3>
+<p>Die App enthält keine eigenen Analyse- oder Absturz-Dienste. Hast du in den Einstellungen deines iPhones unter Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen „Mit App-Entwicklern teilen“ eingeschaltet, stellt Apple uns Absturz- und Leistungsberichte ohne Bezug zu deiner Person bereit. Das kannst du dort jederzeit ausschalten.</p>
+
+<h2>Empfänger und Übermittlung in Drittländer</h2>
+<p>Wir geben keine Daten weiter, weil wir keine erhalten. Apple verarbeitet Käufe in eigener Verantwortung; dabei können Daten in die USA übermittelt werden, abgesichert durch Apples Teilnahme am EU-U.S. Data Privacy Framework und Standardvertragsklauseln.</p>
+
+<h2>Tracking und Werbung</h2>
+<p>Die App zeigt keine Werbung, nutzt keine Analyse- oder Tracking-Dienste und verfolgt dich nicht über Apps und Websites hinweg.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, eine erteilte Einwilligung jederzeit zu widerrufen. Da wir keine Daten über dich speichern, können wir auf eine Anfrage in der Regel nur bestätigen, dass wir keine haben. Du kannst dich ausserdem bei einer Datenschutz-Aufsichtsbehörde beschweren, etwa beim Landesbeauftragten für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz.</p>
+
+<h2>Kinder</h2>
+<p>Die App richtet sich nicht gezielt an Kinder unter 13 Jahren und erhebt auch von ihnen keine Daten.</p>
+
+<h2>Änderungen</h2>
+<p>Wir passen diese Erklärung an, wenn sich die App ändert. Es gilt die hier veröffentlichte Fassung.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: 20 November 2026</p>
+
+<h2>Controller</h2>
+<p>Marc Hammerschmidt<br>Karolingerstraße 9a<br>55283 Nierstein<br>Germany<br>Email: <a href="mailto:support@3d-voxelia.com">support@3d-voxelia.com</a></p>
+
+<h2>Summary</h2>
+<p class="card">Element Survivor works without an account, without ads, without tracking and without an internet connection. We receive no data from you. Your progress stays on your device, and Apple handles purchases.</p>
+
+<h2>Data the app processes</h2>
+<h3>Progress on your device</h3>
+<p>Progress, Jade, stars, gear and settings (language, sound, haptics, graphics, figure) are stored on your device, in the game view's storage and as a backup copy in a file in the app's folder. The app sends this data nowhere; we do not receive it. It stays until you delete it in the app under Settings → “Reset progress” or delete the app. If you use a device backup through iCloud or a computer, your progress is part of it like other apps' data; you control that in your iPhone's settings. Storing on the device is strictly necessary for the game (Section 25(2) no. 2 TDDDG; Art. 6(1)(b) GDPR).</p>
+<h3>Your device's language</h3>
+<p>So the game speaks English or German, the app reads your device's preferred languages. This stays on the device.</p>
+<h3>Purchases</h3>
+<p>Apple handles all in-app purchases through the App Store. We receive no payment data and run no server of our own. On your device, the app asks Apple which purchases belong to your Apple Account. For Jade purchases the app passes Apple a random order code created on your device. It makes sure a payment approved later, for example after an Ask to Buy request, is credited to the right order, and says nothing about you. <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> applies to Apple's processing.</p>
+<h3>Crash and performance reports</h3>
+<p>The app contains no analytics or crash reporting services of its own. If you turned on “Share With App Developers” in your iPhone's Settings under Privacy &amp; Security → Analytics &amp; Improvements, Apple provides us with crash and performance reports that are not linked to you. You can turn this off there at any time.</p>
+
+<h2>Recipients and transfers outside the EU</h2>
+<p>We pass on no data, because we receive none. Apple processes purchases under its own responsibility; data may be transferred to the United States, safeguarded by Apple's participation in the EU-U.S. Data Privacy Framework and standard contractual clauses.</p>
+
+<h2>Tracking and advertising</h2>
+<p>The app shows no ads, uses no analytics or tracking services and does not track you across apps and websites.</p>
+
+<h2>Your rights</h2>
+<p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to withdraw consent at any time. As we store no data about you, we can usually only confirm that we hold none. You may also lodge a complaint with a data protection authority, such as the State Commissioner for Data Protection and Freedom of Information of Rhineland-Palatinate.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and collects no data from them either.</p>
+
+<h2>Changes</h2>
+<p>We update this policy when the app changes. The version published here applies.</p>
+</section>
+</main></body>
+</html>

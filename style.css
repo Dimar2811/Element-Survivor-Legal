@@ -1,0 +1,18 @@
+/* The game's lacquer and ink (src/ui/tokens.css), light by day and dark at night; system type, nothing loads from elsewhere. */
+:root{--bg:#f7f2e6;--ink:#121b20;--muted:#55605f;--accent:#a8302a;--gold:#9a6b12;--line:#e2d8c2;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1114;--ink:#f4ecd8;--muted:#b9b3a2;--accent:#e8b54a;--gold:#e8b54a;--line:#26343b;--card:#121b20}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+h1{font:700 clamp(1.5rem,7vw,2rem)/1.15 ui-serif,"New York",Georgia,serif;margin:0 0 .25em;letter-spacing:-.01em;hyphens:auto}
+h2{font-size:1.15rem;margin:2em 0 .4em}
+h3{font-size:1rem;margin:1.4em 0 .3em}
+p,li{color:var(--ink);overflow-wrap:anywhere}
+.muted{color:var(--muted);font-size:.95rem}
+a{color:var(--accent)}
+nav{display:flex;gap:6px 18px;flex-wrap:wrap;margin-bottom:28px;font-size:.95rem;padding-bottom:14px;border-bottom:1px solid var(--line)}
+nav a:first-child{font-weight:700;color:var(--ink);text-decoration:none;margin-right:auto}
+.lang{display:flex;gap:14px;font-size:.9rem;margin:8px 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:16px 18px}
+section+section{margin-top:56px;padding-top:32px;border-top:1px solid var(--line)}
+ul{padding-left:1.2em}
